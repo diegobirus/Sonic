@@ -1,0 +1,69 @@
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.gameplay {
+  width:800px;
+  height: 600px;
+  border: solid; 
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sonic {
+  bottom: 110px;
+  position: absolute;
+  width: 150px;
+}
+
+
+
+.jump {
+  animation: 1s sonic-animation infinite ease-out;
+
+}
+
+.eggman {
+  width: 250px;
+  bottom: 120px;
+  position: absolute;
+  right: 0;
+  animation: 2s eggman-animation infinite linear;
+
+}  
+
+.background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+
+@keyframes eggman-animation {
+  0% {
+      right: -250px;
+  } 100% {
+      right: 800px;
+  }
+ }
+
+
+ @keyframes sonic-animation {
+  0% {
+    bottom: 110px;
+  } 40%  {
+    bottom: 300px;
+  } 50%  {
+    bottom: 300px;
+  } 60% { 
+    bottom: 300px;
+  } 100% {
+    bottom: 110px;
+  }
+ }
